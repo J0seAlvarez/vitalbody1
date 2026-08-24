@@ -49,9 +49,9 @@ export const Footer = ({ onNavigate }) => (
           <div className="mt-6 flex flex-col gap-3 text-base text-sand/80" data-testid="footer-hours">
             <p className="flex items-center gap-3">
               <Clock size={20} weight="thin" className="shrink-0 text-clay-light" />
-              Tuesday – Saturday · 9:00 AM – 6:00 PM
+              Monday – Saturday · 9:00 AM – 6:00 PM
             </p>
-            <p className="pl-8 text-sand/60">Sunday &amp; Monday · By appointment</p>
+            <p className="pl-8 text-sand/60">Sunday · Closed</p>
           </div>
         </div>
 

@@ -85,6 +85,9 @@ export const Services = () => {
                     <span className="mt-2 block max-w-md text-sm leading-relaxed text-forest-soft sm:text-base">
                       {service.copy}
                     </span>
+                    <span className="mt-3 block text-[11px] font-semibold uppercase tracking-[0.25em] text-clay" data-testid={`service-pricing-${service.num}`}>
+                      Call for pricing · (805) 643-6888
+                    </span>
                   </span>
                   <ArrowUpRight
                     size={28}

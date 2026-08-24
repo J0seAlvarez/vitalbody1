@@ -24,17 +24,25 @@
 - Design: Cormorant Garamond + Manrope, warm sand / deep forest / clay palette, grain overlay
 - Backend enquiry API (create + list)
 
+## Implemented (2026-08-24, iteration 2)
+- Testimonials section: auto-rotating (6s) large editorial quotes with author/service, star row, clickable progress dots — currently SAMPLE quotes (MOCKED, need real client reviews)
+- Gallery section: "Step Inside" dark spotlight grid, real salon interior photo + 3 stock spa images (SAMPLE), hover zoom + caption reveals
+- Enquiry email alerts: every new enquiry triggers a branded notification email to the owner (jaweal@yahoo.com) via Emergent-managed Resend proxy; verified live (HTTP 202). Email failures never block enquiry saving
+- Real hours: Monday–Saturday 9:00 AM–6:00 PM, Sunday Closed (exact open/close times still assumed — only "closed Sundays" confirmed)
+- Services show "Call for pricing · (805) 643-6888" per ritual
+
 ## Notes / Placeholders
-- Business hours shown are placeholders (Tue–Sat 9–6, Sun–Mon by appointment) — confirm with owner
-- No pricing displayed (none on old site) — can be added per service
+- Business hours: open/close times (9–6) still assumed; only Sunday closure confirmed by owner
+- Testimonials are sample text — replace with real client reviews
+- 3 of 4 gallery images are stock spa photos — swap for real interior shots when available
+- No pricing displayed per owner request ("call for price")
 
 ## Backlog
-- P0: Confirm real business hours; add per-service pricing/duration
-- P1: Admin view of enquiries (or email notification on new enquiry via Resend)
-- P1: Photo gallery of the actual salon interior
-- P2: Testimonials section, Google Maps embed, SEO meta/OG tags, online booking calendar integration
+- P0: Confirm exact daily hours; replace sample testimonials with real reviews
+- P1: Replace stock gallery photos with real salon photography; admin view of enquiries
+- P2: Google Maps embed, SEO meta/OG tags, online booking calendar integration
 
 ## Next Tasks
-1. Confirm hours + pricing with the owner
-2. Add email notification on enquiry
-3. Add testimonials
+1. Collect real testimonials + interior photos from owner
+2. Confirm exact open/close times
+3. Add Google Maps embed in footer
