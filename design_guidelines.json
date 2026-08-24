@@ -1,0 +1,139 @@
+{
+  "design_concept": {
+    "archetype": "Organic & Earthy meets Luxury (Biophilic Design)",
+    "vibe": "Serene, transformative, premium, editorial, slow-paced",
+    "theme": "light",
+    "core_philosophy": "A digital sanctuary. Uses high-contrast editorial typography, earthy color palettes, intentional negative space, and slow, fluid animations to lower visitor heart rates and build trust."
+  },
+  "colors": {
+    "background": {
+      "primary": "#F4F2EC",
+      "secondary": "#EAE6DB",
+      "overlay": "rgba(20, 28, 22, 0.4)"
+    },
+    "text": {
+      "primary": "#1A251D",
+      "secondary": "#4F5952",
+      "accent": "#9E8166"
+    },
+    "brand": {
+      "primary": "#1A251D",
+      "accent": "#BFA488",
+      "muted": "#D6CFC4"
+    },
+    "surface": {
+      "card": "#FFFFFF",
+      "glass": "rgba(255, 255, 255, 0.7)"
+    }
+  },
+  "typography": {
+    "heading_font": "Cormorant Garamond",
+    "body_font": "Manrope",
+    "scale": {
+      "h1": "text-6xl sm:text-7xl lg:text-[7rem] leading-[0.9] tracking-tighter",
+      "h2": "text-4xl sm:text-5xl lg:text-6xl leading-tight tracking-tight",
+      "h3": "text-2xl sm:text-3xl leading-snug",
+      "body": "text-base sm:text-lg leading-relaxed tracking-wide",
+      "overline": "text-xs sm:text-sm uppercase tracking-[0.2em] font-semibold"
+    },
+    "rules": [
+      "Use Cormorant Garamond in italic for selected emphasis words within headings to create an editorial feel.",
+      "Never use default bold for headings; rely on weight contrast (e.g., Light 300 vs Medium 500) and immense size.",
+      "Overlines must always be Manrope, uppercase, and widely spaced."
+    ]
+  },
+  "layout_and_spacing": {
+    "spacing_scale": "Use extreme padding: py-24, py-32, py-40 for section breaks to create a 'breathing' rhythm.",
+    "grid": "Bento-style and asymmetrical. Avoid standard 50/50 splits. Use 4-column or 12-column grids where elements span unevenly (e.g., col-span-5 and col-span-7).",
+    "corners": "Mix rounded-none for rigid luxury with rounded-full for organic call-to-actions.",
+    "image_treatment": "Clip images into distinct aspect ratios (e.g., tall 3:4 or cinematic 16:9). Do not fill standard squares."
+  },
+  "motion": {
+    "global": "Implement 'lenis' for buttery smooth momentum scrolling. All interactions must feel deliberate and unhurried.",
+    "hero_reveal": "Masked line-by-line reveal using Framer Motion. Wrap each line of text in an overflow-hidden div, and translate the text up from y: '100%' with a duration of 1.2s and ease: [0.76, 0, 0.24, 1].",
+    "scroll_reveal": "Fade in and slight upward translation (y: 40 to 0) tied to scroll viewport entry.",
+    "parallax": "Use useScroll and useTransform for images so they move slightly slower than the page scroll, creating depth."
+  },
+  "media": {
+    "images": {
+      "hero_ambient": {
+        "url": "https://images.pexels.com/photos/33529508/pexels-photo-33529508.jpeg",
+        "description": "Serene luxury spa bathtub environment for atmospheric background.",
+        "usage": "Hero section background with dark overlay, or high-end parallax asset."
+      },
+      "massage_therapy": {
+        "url": "https://images.unsplash.com/photo-1639162906614-0603b0ae95fd",
+        "description": "Woman getting a back massage.",
+        "usage": "Services showcase - Massage."
+      },
+      "facials": {
+        "url": "https://images.unsplash.com/photo-1555820585-c5ae44394b79",
+        "description": "Artistic portrait of woman with closed eyes through glass.",
+        "usage": "Services showcase - Facials & Skincare."
+      },
+      "hair_salon": {
+        "url": "https://images.unsplash.com/photo-1600948836101-f9ffda59d250",
+        "description": "Modern hair salon chairs and round mirrors.",
+        "usage": "Services showcase - Hair."
+      },
+      "body_treatment": {
+        "url": "https://images.unsplash.com/photo-1600334089648-b0d9d3028eb2",
+        "description": "Hot stone massage body treatment.",
+        "usage": "Services showcase - Body Treatment."
+      }
+    },
+    "icons": "Use @phosphor-icons/react (Thin or Light weight) for an elegant, minimal look."
+  },
+  "sections_blueprint": [
+    {
+      "name": "Navigation",
+      "features": "Crystal Glassmorphism header. Absolute positioned at top. Contains elegant brand text 'VITAL BODY', simple navigation links, and a pill-shaped CTA."
+    },
+    {
+      "name": "Hero Section",
+      "features": "Massive screen-filling section. Background is a slow-panning, dimly lit luxury spa image (or color overlay). Features the masked line-by-line reveal of 'A Place of Transformation'. Includes an aesthetic scroll indicator at the bottom."
+    },
+    {
+      "name": "Editorial Marquee",
+      "features": "react-fast-marquee component. Very slow organic drift. Text: '* Wellness & Beauty * Body * Heart * Soul * Ventura, CA *'. Uses Cormorant Garamond, italicized, low contrast (e.g., text-brand-muted on secondary bg)."
+    },
+    {
+      "name": "Manifesto (Brand Copy)",
+      "features": "Numbered layout (01. The Body, 02. The Heart, 03. The Soul). Features the core copy: 'We offer a unique space where you will feel nurtured and revitalized...'. Asymmetrical typography with huge numbers and indented paragraphs."
+    },
+    {
+      "name": "Services Showcase",
+      "features": "Interactive accordion or hover-based bento grid. Services: Massage Therapy, Hair Salon, Facials & Skin Care, Waxing, Body Treatment. When hovering a service, the corresponding luxury image reveals or parallax scales."
+    },
+    {
+      "name": "Enquiry & Booking (Prospect & Refuge)",
+      "features": "A soft, rounded card 'Refuge' sitting on a wider atmospheric background 'Prospect'. Uses Shadcn forms deeply customized (e.g., variant with only bottom borders, no heavy outlines) to collect leads. Fields: Name, Email, Service Interest, Date, Message."
+    },
+    {
+      "name": "Footer",
+      "features": "Massive typography 'VITAL BODY' spanning the width. Contact details elegantly laid out: (805) 643-6888, jaweal@yahoo.com, 309 Borchard Dr. Ventura. Open hours displayed cleanly."
+    }
+  ],
+  "components_to_use": [
+    "react-fast-marquee",
+    "@studio-freight/react-lenis (for smooth scroll)",
+    "framer-motion",
+    "lucide-react or @phosphor-icons/react",
+    "Shadcn UI: Form, Input, Select, Button, Accordion (highly customized to fit luxury theme)"
+  ],
+  "general_ui_ux_guidelines": [
+    "All interactive and key informational elements MUST include a `data-testid` attribute for automated testing.",
+    "Do not center-align the main App container. Left alignment and intentional margins are key for luxury editorial flow.",
+    "No generic SaaS gradients. Use solid elegant colors or highly subtle grain textures.",
+    "Implement focus states that are accessible but maintain brand aesthetics (e.g., a thin offset ring in brand primary color)."
+  ],
+  "instructions_to_main_agent": [
+    "Install required dependencies: framer-motion, @studio-freight/react-lenis, react-fast-marquee, @phosphor-icons/react.",
+    "Set up Tailwind config with the specified colors, fonts (import via Google Fonts in index.css: Cormorant Garamond and Manrope), and extended spacing/typography utilities.",
+    "Ensure the hero animation absolutely nails the 'masked line-by-line reveal'. Wrap lines in overflow-hidden divs and animate the inner text.",
+    "For the Shadcn components (like Form/Input), strip out the default Vercel/SaaS look. Remove heavy rings and backgrounds; use minimal underlines or very subtle soft-rounded inputs.",
+    "Pay extremely close attention to the Spacing Scale. If you think it's enough space, add more. The design must feel expansive and serene.",
+    "Never use generic placeholder text or placeholder image URLs. Use the provided actual copy and the curated Unsplash/Pexels URLs in the media section.",
+    "Construct the layout natively in React without forcing everything into Shadcn Cards."
+  ]
+}
