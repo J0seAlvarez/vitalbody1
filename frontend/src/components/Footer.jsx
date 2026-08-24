@@ -8,8 +8,39 @@ export const Footer = ({ onNavigate }) => (
   <footer id="visit" className="bg-forest text-sand" data-testid="footer-section">
     <div className="mx-auto max-w-[1400px] px-6 pt-24 sm:px-10 sm:pt-32">
       <Reveal>
+        <div className="relative overflow-hidden border border-sand/15" data-testid="footer-map-frame">
+          <iframe
+            title="Map to Vital Body Healing Spa & Salon, 309 Borchard Dr, Ventura"
+            src="https://www.google.com/maps?q=309+Borchard+Dr,+Ventura,+CA+93003&output=embed"
+            className="h-[320px] w-full opacity-90 grayscale contrast-[1.05] sm:h-[420px]"
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
+            allowFullScreen
+            data-testid="footer-map"
+          />
+          <a
+            href="https://maps.google.com/?q=309+Borchard+Dr+Ventura+CA"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="absolute bottom-0 left-0 flex items-center gap-4 bg-forest/85 px-6 py-4 backdrop-blur-sm transition-colors duration-500 hover:bg-clay"
+            data-testid="footer-directions-link"
+          >
+            <MapPin size={20} weight="thin" className="text-clay-light" />
+            <span>
+              <span className="block text-[10px] font-semibold uppercase tracking-[0.3em] text-sand/60">
+                Find Us
+              </span>
+              <span className="block text-sm font-semibold uppercase tracking-[0.2em] text-sand">
+                Get Directions
+              </span>
+            </span>
+          </a>
+        </div>
+      </Reveal>
+
+      <Reveal>
         <h2
-          className="whitespace-nowrap font-display font-light leading-none tracking-tighter text-sand"
+          className="mt-16 whitespace-nowrap font-display font-light leading-none tracking-tighter text-sand sm:mt-20"
           style={{ fontSize: "clamp(3rem, 11.5vw, 11rem)" }}
           data-testid="footer-brand"
         >

@@ -31,6 +31,9 @@
 - Real hours: Monday–Saturday 9:00 AM–6:00 PM, Sunday Closed (exact open/close times still assumed — only "closed Sundays" confirmed)
 - Services show "Call for pricing · (805) 643-6888" per ritual
 
+## Implemented (2026-08-24, iteration 3)
+- Interactive Google Maps embed in footer: grayscale-styled map pinned to 309 Borchard Dr, Ventura, with "Find Us / Get Directions" overlay linking to Google Maps
+
 ## Notes / Placeholders
 - Business hours: open/close times (9–6) still assumed; only Sunday closure confirmed by owner
 - Testimonials are sample text — replace with real client reviews
